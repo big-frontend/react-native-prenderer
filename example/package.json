@@ -6,7 +6,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "start:yue": "./node_modules/.bin/babel-node --presets react index.yue.js",
+    "start:web": "./node_modules/.bin/babel-node --presets react index.web1.js"
   },
   "dependencies": {
     "expo": "~49.0.15",

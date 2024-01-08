@@ -1,5 +1,5 @@
 {
-  "name": "prenderer",
+  "name": "@spacecraft/react-native-prenderer",
   "version": "0.1.0",
   "description": "prenderer",
   "main": "lib/commonjs/index",
@@ -32,7 +32,11 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli lib",
     "prepare": "bob build",
-    "release": "release-it"
+    "release": "release-it",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+     "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "keywords": [
     "react-native",
@@ -67,11 +71,18 @@
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^28.1.1",
     "prettier": "^2.0.5",
-    "react": "18.2.0",
     "react-native": "0.72.6",
     "react-native-builder-bob": "^0.20.0",
     "release-it": "^15.0.0",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "babel-cli": "6.26.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-reconciler": "0.12.0",
+    "react-scripts": "1.1.4"
   },
   "resolutions": {
     "@types/react": "17.0.21"
